@@ -1,6 +1,6 @@
-# Contract Hire
+# Angular Demo - Kavi
 
-Contract Hire front-end system with Angular 5.x
+Angular Demo - Kavi front-end system with Angular 5.x
 ## After project clone if you have any error run the following command
 ```bash
 npm uninstall -g angular-cli && npm uninstall --save-dev angular-cli && npm uninstall -g @angular/cli && npm cache clean && npm install -g @angular/cli@latest && rm -rf node_modules dist && npm install --save-dev @angular/cli@latest && npm install
