@@ -1,0 +1,24 @@
+<div class="ui-g sign-in-div">
+  <form [formGroup]="signInForm">
+  <div class="ui-g-12">
+    <div class="ui-g-6">
+      User Name
+    </div>
+    <div class="ui-g-6">
+      <input type="text" formControlName="userName">
+    </div>
+  </div>
+  <div class="ui-g-12">
+      <div class="ui-g-6">
+        Password
+      </div>
+      <div class="ui-g-6">
+        <input type="text" formControlName="password" pInputText>
+      </div>
+    </div>
+    <div class="ui-g-12">
+      <button pButton type="button" label="Sign In" (click)="validLogin()"></button>
+      
+    </div>
+</form>
+</div>

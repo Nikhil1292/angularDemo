@@ -1,0 +1,9 @@
+/* You can add global styles to this file, and also import other style files */
+
+.sign-in-div {
+    position: absolute;
+    top:50%;
+    left: 25%;
+    /* transform:translate(50px,50px); */
+    border: 1px solid #000000;
+}

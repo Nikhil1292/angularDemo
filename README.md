@@ -1,48 +1,27 @@
-# Angular Demo - Kavi
+# MyFirst
 
-Angular Demo - Kavi front-end system with Angular 5.x
-## After project clone if you have any error run the following command
-```bash
-npm uninstall -g angular-cli && npm uninstall --save-dev angular-cli && npm uninstall -g @angular/cli && npm cache clean && npm install -g @angular/cli@latest && rm -rf node_modules dist && npm install --save-dev @angular/cli@latest && npm install
-```
-
-## Before code push do the following checks 
-```bash
-npm run tsformat
-ng lint
-npm run scsslint
-```
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.1.3.
 
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
+## Code scaffolding
+
+Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+
 ## Build
 
-Run `ng build --prod --environment=prod --aot` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--dev` flag for a dev build.
+Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
 
-## Create a module 
+## Running unit tests
 
-~~~bash
-ng g m modules/Dashboard --routing
-~~~
+Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-## Create a Page inside a module
+## Running end-to-end tests
 
-Here note that for the folder we are specifying folder names in all lower case rather than specifying capitalized module name. Only the final page/component name is capitalized. 
+Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
 
-~~~bash
-ng g c modules/dashboard/pages/dashboard
-~~~
+## Further help
 
-## Create a component inside a module
-
-~~~bash
-ng g c modules/dashboard/components/Info
-~~~
-
-## Create a Service
-~~~bash
-ng g service modules/shared/services/UserService
-~~~
-
+To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
