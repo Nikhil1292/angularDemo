@@ -3,7 +3,7 @@
 .sign-in-div {
     position: absolute;
     top:50%;
-    left: 25%;
-    /* transform:translate(50px,50px); */
+    left: 50%;
+    transform:translate(-50%,-50%);
     border: 1px solid #000000;
 }

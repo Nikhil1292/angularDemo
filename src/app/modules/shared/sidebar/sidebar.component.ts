@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { MenuItem } from 'primeng/components/common/api';
+import { MenuItem } from 'primeng/api';
 
 @Component({
   selector: 'app-sidebar',
@@ -13,9 +13,8 @@ export class SidebarComponent implements OnInit {
 
   ngOnInit() {
     this.items = [
-      {label: 'New', icon: 'pi pi-fw pi-plus'},
-      {label: 'Open', icon: 'pi pi-fw pi-download'},
-      {label: 'Undo', icon: 'pi pi-fw pi-refresh'}
+      {label: 'Customer List', icon: 'pi pi-fw pi-plus', routerLink : 'customer-list' },
+      {label: 'Manage Customer', icon: 'pi pi-fw pi-download'}
   ];
   }
 

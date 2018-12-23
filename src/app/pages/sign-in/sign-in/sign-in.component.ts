@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormBuilder, Validators, FormControl, ReactiveFormsModule } from "@angular/forms";
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-sign-in',
@@ -9,16 +10,22 @@ import { FormGroup, FormBuilder, Validators, FormControl, ReactiveFormsModule } 
 export class SignInComponent implements OnInit {
 
   signInForm : FormGroup;
-  constructor(private formBuilder:FormBuilder) { }
+  roles:any[] = [];
+  constructor(private formBuilder:FormBuilder, private router:Router) { }
 
   ngOnInit() {
+    this.roles = [
+      { label :'Customer' , value : 'Customer'},
+      { label :'User' , value : 'User'}
+    ];
     this.setFormData();
   }
 
   setFormData() {
     this.signInForm = this.formBuilder.group({
       userName: ['', [Validators.required]],
-      password: ['', [Validators.required]]
+      password: ['', [Validators.required]],
+      role: ['', [Validators.required]]
     });
   }
 
@@ -27,6 +34,14 @@ export class SignInComponent implements OnInit {
     const signInArr = {
       userName : signInData.userName.value,
       password : signInData.password.value,
+      role : signInData.role.value,
+    }
+debugger;
+    if (signInArr.role === 'Customer') {
+      this.router.navigate(['/customers']);
+    }
+    else {
+      this.router.navigate(['/users']);
     }
     debugger;
   }

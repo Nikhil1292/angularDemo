@@ -17,6 +17,14 @@
       </div>
     </div>
     <div class="ui-g-12">
+      <div class="ui-g-6">
+        Role  
+      </div>
+      <div class="ui-g-6">
+        <p-dropdown [options]="roles" formControlName="role"></p-dropdown>
+      </div>
+    </div>
+    <div class="ui-g-12">
       <button pButton type="button" label="Sign In" (click)="validLogin()"></button>
       
     </div>

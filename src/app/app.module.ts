@@ -6,8 +6,6 @@ import { SignInComponent } from './pages/sign-in/sign-in/sign-in.component';
 import { routing } from "./app-routing";
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ButtonModule } from 'primeng/components/button/button';
-import { CustomerListComponent } from './modules/customer/components/customer-list/customer-list.component';
-import { CustmerListLandingComponent } from './modules/customer/pages/custmer-list-landing/custmer-list-landing.component';
 import { AppHomeComponent } from "./pages/app-home/app-home.component";
 import { SharedModule } from "./modules/shared/shared.module";
 
@@ -16,8 +14,6 @@ import { SharedModule } from "./modules/shared/shared.module";
     AppComponent,
     SignUpComponent,
     SignInComponent,
-    CustomerListComponent,
-    CustmerListLandingComponent,
     AppHomeComponent
   ],
   imports: [
