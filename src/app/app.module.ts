@@ -8,13 +8,15 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ButtonModule } from 'primeng/components/button/button';
 import { AppHomeComponent } from "./pages/app-home/app-home.component";
 import { SharedModule } from "./modules/shared/shared.module";
+import { UserlandingComponent } from './modules/user/pages/userlanding/userlanding.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     SignUpComponent,
     SignInComponent,
-    AppHomeComponent
+    AppHomeComponent,
+    UserlandingComponent
   ],
   imports: [
     BrowserModule,
