@@ -9,19 +9,22 @@ import { ButtonModule } from 'primeng/components/button/button';
 import { AppHomeComponent } from "./pages/app-home/app-home.component";
 import { SharedModule } from "./modules/shared/shared.module";
 import { UserlandingComponent } from './modules/user/pages/userlanding/userlanding.component';
+import { BrowserAnimationsModule } from '../../node_modules/@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
     AppComponent,
     SignUpComponent,
     SignInComponent,
-    AppHomeComponent,
+    //AppHomeComponent,
     UserlandingComponent
   ],
   imports: [
     BrowserModule,
     routing,
-    FormsModule, 
+    FormsModule,
+    BrowserModule,
+    BrowserAnimationsModule,
     ReactiveFormsModule,
     ButtonModule,
     SharedModule

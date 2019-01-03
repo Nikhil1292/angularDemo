@@ -20,7 +20,6 @@ const routes: Routes = [
     },
     {
         path: 'customers',
-        component: AppHomeComponent,
         children: [
             {
                 path: '',

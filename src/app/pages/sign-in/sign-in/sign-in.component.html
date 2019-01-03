@@ -1,14 +1,14 @@
 <div class="ui-g sign-in-div">
   <form [formGroup]="signInForm">
-  <div class="ui-g-12">
-    <div class="ui-g-6">
-      User Name
+    <div class="ui-g-12">
+      <div class="ui-g-6">
+        User Name
+      </div>
+      <div class="ui-g-6">
+        <input type="text" formControlName="userName">
+      </div>
     </div>
-    <div class="ui-g-6">
-      <input type="text" formControlName="userName">
-    </div>
-  </div>
-  <div class="ui-g-12">
+    <div class="ui-g-12">
       <div class="ui-g-6">
         Password
       </div>
@@ -18,15 +18,15 @@
     </div>
     <div class="ui-g-12">
       <div class="ui-g-6">
-        Role  
+        Role
       </div>
       <div class="ui-g-6">
-        <p-dropdown [options]="roles" formControlName="role"></p-dropdown>
+        <p-dropdown [options]="roles" placeholder="Select Role" formControlName="role"></p-dropdown>
       </div>
     </div>
     <div class="ui-g-12">
-      <button pButton type="button" label="Sign In" [disabled]="!signInForm.valid" (click)="validLogin()"></button>
-      
+      <button pButton type="submit" label="Sign In" [disabled]="!signInForm.valid" (click)="validLogin()"></button>
+
     </div>
-</form>
+  </form>
 </div>
