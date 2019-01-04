@@ -7,6 +7,8 @@ import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { NgModule } from "@angular/core";
 import { TopmenuComponent } from './topmenu/topmenu.component';
 import { MenubarModule } from 'primeng/menubar';
+import { StepsModule } from 'primeng/steps';
+import { CommonModule } from "@angular/common";
 
 @NgModule({
     declarations: [
@@ -16,14 +18,18 @@ import { MenubarModule } from 'primeng/menubar';
     imports: [
         MenuModule,
         DropdownModule,
-        MenubarModule
+        MenubarModule,
+        StepsModule,
+        CommonModule
     ],
     exports: [
         SidebarComponent,
         MenuModule,
         DropdownModule,
         MenubarModule,
-        TopmenuComponent
+        TopmenuComponent,
+        StepsModule,
+        CommonModule
     ]
 })
 
