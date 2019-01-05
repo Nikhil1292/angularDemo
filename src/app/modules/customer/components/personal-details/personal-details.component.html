@@ -1,6 +1,12 @@
+<div [formGroup]="customerFormData">
 
-<input type="text" formControlName="customerFormData.controls.personalDetails.firstName" value="">
-<br>
-<input type="text" formControlName="customerFormData.controls.personalDetails.lastName" value="">
-<br>
-<button pButton type="button" label="Next" (click)="clickNext()"></button>
+    <div formGroupName="personalDetails">
+
+
+        <input type="text" formControlName="customerFormData.controls.personalDetails.firstName" value="">
+        <br>
+        <input type="text" formControlName="customerFormData.controls.personalDetails.lastName" value="">
+        <br>
+        <button pButton type="button" label="Next" (click)="clickNext()"></button>
+    </div>
+</div>
