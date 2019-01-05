@@ -38,7 +38,7 @@ export class SignInComponent implements OnInit {
     }
 debugger;
     if (signInArr.role === 'Customer') {
-      this.router.navigate(['/customers']);
+      this.router.navigate(['/customers/customer-add']);
     }
     else {
       this.router.navigate(['/users']);

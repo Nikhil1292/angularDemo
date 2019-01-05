@@ -9,6 +9,8 @@ import { TopmenuComponent } from './topmenu/topmenu.component';
 import { MenubarModule } from 'primeng/menubar';
 import { StepsModule } from 'primeng/steps';
 import { CommonModule } from "@angular/common";
+import { ButtonModule } from 'primeng/components/button/button';
+
 
 @NgModule({
     declarations: [
@@ -20,7 +22,8 @@ import { CommonModule } from "@angular/common";
         DropdownModule,
         MenubarModule,
         StepsModule,
-        CommonModule
+        CommonModule,
+        ButtonModule
     ],
     exports: [
         SidebarComponent,
@@ -29,7 +32,8 @@ import { CommonModule } from "@angular/common";
         MenubarModule,
         TopmenuComponent,
         StepsModule,
-        CommonModule
+        CommonModule,
+        ButtonModule
     ]
 })
 

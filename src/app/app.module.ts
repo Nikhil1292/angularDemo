@@ -4,7 +4,6 @@ import { AppComponent } from './app.component';
 import { SignInComponent } from './pages/sign-in/sign-in/sign-in.component';
 import { routing } from "./app-routing";
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { ButtonModule } from 'primeng/components/button/button';
 import { AppHomeComponent } from "./pages/app-home/app-home.component";
 import { SharedModule } from "./modules/shared/shared.module";
 import { UserlandingComponent } from './modules/user/pages/userlanding/userlanding.component';
@@ -34,7 +33,7 @@ import { EducationComponent } from './pages/sign-up/components/education/educati
     BrowserModule,
     BrowserAnimationsModule,
     ReactiveFormsModule,
-    ButtonModule,
+    // ButtonModule,
     SharedModule
   ],
   providers: [],
