@@ -5,8 +5,8 @@
   <div  class="ui-g-12">
     <!-- <form [formGroup]="signUpForm"> -->
       <app-personal-details [activeStep]="activeStep" *ngIf="activeStep.index === 0"></app-personal-details>
-      <app-address *ngIf="activeStep.index === 1"></app-address>
-      <app-education *ngIf="activeStep.index === 2"></app-education>
+      <app-address [activeStep]="activeStep" *ngIf="activeStep.index === 1"></app-address>
+      <app-education [activeStep]="activeStep" *ngIf="activeStep.index === 2"></app-education>
     <!-- </form> -->
   </div>
 </div>
