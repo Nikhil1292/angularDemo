@@ -3,10 +3,11 @@
       <p-steps [model]="items" [(activeIndex)]="activeStep.index"></p-steps>
   </div>
   <div  class="ui-g-12">
-    <!-- <form [formGroup]="signUpForm"> -->
-      <app-personal-details [activeStep]="activeStep" *ngIf="activeStep.index === 0"></app-personal-details>
+    <form [formGroup]="customerForm">
+      <app-personal-details [activeStep]="activeStep" *ngIf="activeStep.index === 0"
+      [customerFormData]="customerForm" [formGroupName]="personalDetails"></app-personal-details>
       <app-address [activeStep]="activeStep" *ngIf="activeStep.index === 1"></app-address>
       <app-education [activeStep]="activeStep" *ngIf="activeStep.index === 2"></app-education>
-    <!-- </form> -->
+    </form>
   </div>
 </div>

@@ -10,6 +10,8 @@ import { MenubarModule } from 'primeng/menubar';
 import { StepsModule } from 'primeng/steps';
 import { CommonModule } from "@angular/common";
 import { ButtonModule } from 'primeng/components/button/button';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+
 
 
 @NgModule({
@@ -23,7 +25,9 @@ import { ButtonModule } from 'primeng/components/button/button';
         MenubarModule,
         StepsModule,
         CommonModule,
-        ButtonModule
+        ButtonModule,
+        FormsModule,
+        ReactiveFormsModule
     ],
     exports: [
         SidebarComponent,
@@ -33,7 +37,9 @@ import { ButtonModule } from 'primeng/components/button/button';
         TopmenuComponent,
         StepsModule,
         CommonModule,
-        ButtonModule
+        ButtonModule,
+        ReactiveFormsModule,
+        FormsModule
     ]
 })
 
