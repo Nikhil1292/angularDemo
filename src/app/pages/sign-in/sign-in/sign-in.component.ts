@@ -9,14 +9,14 @@ import { Router } from '@angular/router';
 })
 export class SignInComponent implements OnInit {
 
-  signInForm : FormGroup;
-  roles:any[] = [];
-  constructor(private formBuilder:FormBuilder, private router:Router) { }
+  signInForm: FormGroup;
+  roles: any[] = [];
+  constructor(private formBuilder: FormBuilder, private router: Router) { }
 
   ngOnInit() {
     this.roles = [
-      { label :'Customer' , value : 'Customer'},
-      { label :'User' , value : 'User'}
+      { label: 'Customer', value: 'Customer' },
+      { label: 'User', value: 'User' }
     ];
     this.setFormData();
   }
@@ -32,17 +32,15 @@ export class SignInComponent implements OnInit {
   validLogin() {
     const signInData = this.signInForm.controls;
     const signInArr = {
-      userName : signInData.userName.value,
-      password : signInData.password.value,
-      role : signInData.role.value,
+      userName: signInData.userName.value,
+      password: signInData.password.value,
+      role: signInData.role.value,
     }
-debugger;
     if (signInArr.role === 'Customer') {
       this.router.navigate(['/customers']);
     }
     else {
       this.router.navigate(['/users']);
     }
-    debugger;
   }
 }
