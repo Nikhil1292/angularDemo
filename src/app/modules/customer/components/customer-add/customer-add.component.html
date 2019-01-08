@@ -6,7 +6,8 @@
     <form [formGroup]="customerForm">
       <app-personal-details [activeStep]="activeStep" *ngIf="activeStep.index === 0"
       [customerFormData]="customerForm"></app-personal-details>
-      <app-address [activeStep]="activeStep" *ngIf="activeStep.index === 1"></app-address>
+      <app-address [activeStep]="activeStep" *ngIf="activeStep.index === 1"
+      [customerFormData]="customerForm"></app-address>
       <app-education [activeStep]="activeStep" *ngIf="activeStep.index === 2"></app-education>
     </form>
   </div>

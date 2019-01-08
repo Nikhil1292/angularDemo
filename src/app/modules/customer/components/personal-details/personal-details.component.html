@@ -3,10 +3,11 @@
     <div formGroupName="personalDetails">
 
 
-        <input type="text" formControlName="customerFormData.controls.personalDetails.firstName" value="">
+        <input type="text" formControlName="firstName" value="">
         <br>
-        <input type="text" formControlName="customerFormData.controls.personalDetails.lastName" value="">
+        <input type="text" formControlName="lastName" value="">
         <br>
-        <button pButton type="button" label="Next" (click)="clickNext()"></button>
+        <button pButton type="button" label="Next" (click)="clickNext()"
+        [disabled]="!customerFormData.controls.personalDetails.valid"></button>
     </div>
 </div>

@@ -21,6 +21,7 @@ export class PersonalDetailsComponent implements OnInit {
   }
 
   clickNext() {
+    this.customerFormData.controls.personalDetails.value;
     // this.customerFormData.controls.personalDetails.value;
     debugger;
     this.activeStep.index = 1;
